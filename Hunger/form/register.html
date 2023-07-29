@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hunger template: register</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Food Recipe Web Template">
+    <meta name="keywords" content="food, recipe, left sidebar, html">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Tangerine&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <!-- page preloader -->
+    <div id="preloader">
+      <div class="spinner border-right-color"></div>
+    </div>
+    <!-- end preloader -->
+    <!-- header section -->
+    <header>
+      <!-- top header -->
+      <div class="header-container border-bottom-color">
+        <div class="container">
+          <div class="dropdown_toggle">
+            <button class="btn btn-sm btn-toggle">
+              <span><i class="fas fa-user"></i></span>
+            </button>
+
+            <ul class="auth-panel">
+              <li><a href="register.html">Sign Up</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+          <!-- search bar -->
+          <form class="search-form float-right" action="" method="get">
+            <div class="input-group">
+              <input type="search" class="form-control">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-search">
+                  <span><i class="fas fa-search"></i></span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- end header container -->
+      <!-- navigation menu -->
+      <nav class="navbar nav-header">
+        <div class="container">
+          <a class="logo" href="../index.html">
+            <img src="../img/logo.png" alt="">
+          </a>
+          <button class="toggle" role="button">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </button>
+
+          <!-- main menu -->
+          <ul class="menu background-menu-color">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../recipe.html">Recipe</a></li>
+            <li class="dropdown"><a href="#">Page</a>
+              <!-- dropdown sub menu -->
+              <ul class="nav-dropdown">
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../user-profile.html">Profile</a></li>
+                <li><a href="../404.html">Error</a></li>
+              </ul>
+            </li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../recipe/form/create-recipe.html">Submit Recipe</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end navigation menu -->
+    </header>
+    <!-- end header section -->
+    <div class="main-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <!-- signup form -->
+            <section class="signup-form aligncenter">
+              <h3>Create your Account</h3>
+              <form action="" method="" id="register_form">
+                <div class="form-group row">
+                  <label for="name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" id="name" name="name" class="input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" id="email" name="email" class="input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="password" class="col-sm-2 col-form-label">password</label>
+                  <div class="col-sm-10">
+                    <input type="password" id="password" name="password" class="input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="term_condition">
+                      <label class="form-check-label">
+                        I agree with <a href="">term & conditions</a>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10 offset-sm-2">
+                    <button class="btn-submit btn-bg-color" type="submit">Sign up</button>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <p>already have an account? <a href="login.html">Login</a></p>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- footer menu -->
+            <ul class="footer-menu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="">Recipe</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul> <!-- footer menu end -->
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-social-link">
+              <li><a class="twitter-icon"><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a class="facebook-icon"><span><i class="fab fa-facebook"></i></span></a></li>
+              <li><a class="instagram-icon"><span><i class="fab fa-instagram"></i></span></a></li>
+              <li><a class="linkedin-icon"><span><i class="fab fa-linkedin"></i></span></a></li>
+              <li><a class="youtube-icon"><span><i class="fab fa-youtube"></i></span></a></li>
+            </ul> <!-- footer social link end -->
+          </div>
+        </div>
+        <!-- copyright -->
+        <p class="copyright">
+          &copy;<script>document.write(new Date().getFullYear())</script> All Rights Reversed
+        </p>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script defer src="../js/all.min.js"></script>
+    <script defer src="../js/fontawesome.min.js"></script>
+    <script defer src="../js/jquery-3.4.1.min.js"></script>
+    <script defer src="../js/jquery.validate.min.js"></script>
+    <script defer src="../js/bootstrap.min.js"></script>
+    <script defer src="../js/style.js"></script>
+    <script defer src="../js/form.js"></script>
+  </body>
+</html>

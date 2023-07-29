@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hunger template : login</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Food Recipe Web Template">
+    <meta name="keywords" content="food, recipe, left sidebar, html">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Tangerine&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body>
+    <!-- page preloader -->
+    <div id="preloader">
+      <div class="spinner border-right-color"></div>
+    </div>
+    <!-- end preloader -->
+    <!-- header sectopm -->
+    <header>
+      <!-- top header -->
+      <div class="header-container border-bottom-color">
+        <div class="container">
+          <div class="dropdown_toggle">
+            <button class="btn btn-sm btn-toggle">
+              <span><i class="fas fa-user"></i></span>
+            </button>
+            <ul class="auth-panel">
+              <li><a href="../../form/register.html">Sign up</a></li>
+              <li><a href="../../form/login.html">Login</a></li>
+            </ul>
+          </div>
+          <!-- search bar -->
+          <form class="search-form float-right" action="" method="get">
+            <div class="input-group">
+              <input type="search" class="form-control">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-search" type="submit">
+                  <span><i class="fas fa-search"></i></span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- end header container -->
+      <!-- navigation menu -->
+      <nav class="navbar nav-header">
+        <div class="container">
+          <!-- logo -->
+          <a class="logo" href="../../index.html">
+            <img src="../../img/logo.png" alt="">
+          </a>
+          <button class="toggle" role="button">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </button>
+
+          <!-- main menu -->
+          <ul class="menu background-menu-color">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../recipe.html">Recipe</a></li>
+            <li class="dropdown"><a href="#">page</a>
+              <!-- dropdown sub menu -->
+              <ul class="nav-dropdown">
+                <li><a href="../../about.html">About</a></li>
+                <li><a href="../../user-profile.html">Profile</a></li>
+                <li><a href="../../404.html">Error</a></li>
+              </ul>
+            </li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../form/create-recipe.html">Submit Recipe</a></li>
+          </ul>
+          <!-- end main menu -->
+        </div>
+      </nav>
+      <!-- end navigation menu -->
+    </header>
+    <!-- end header section -->
+    <div class="main-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <!-- make new recipe -->
+            <section class="create-recipe">
+              <div class="page-title">
+                <h2>Submit Recipe</h2>
+              </div>
+              <div class="recipe-form">
+              <form class="" action="" method="">
+                <div class="details">
+                  <h4>Details</h4>
+                  <div class="form-group row">
+                    <div class="col-md-10">
+                      <label>Name</label>
+                      <input type="text" name="name" id="recipe_name" class="input" placeholder="Recipe Name" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-10">
+                      <label>Description</label>
+                      <textarea name="description" id="recipe_description" rows="1" class="input" placeholder="Description"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-10">
+                      <label>Choose category</label>
+                      <select name="category" class="input select-category ">
+                        <option value="1">Veg Recipes</option>
+                        <option value="2">Dinner | Lunch</option>
+                        <option value="3">Breakfast</option>
+                        <option value="4">Special Recipes</option>
+                        <option value="5">Chicken Recipes</option>
+                        <option value="6">Starter</option>
+                        <option value="7">Snacks</option>
+                        <option value="8">Summer Drinks & Ice creams</option>
+                        <option value="9">Baked Food</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="addition-information">
+                  <div class="form-group row">
+                    <label class="col-md-4">Yield</label>
+                    <div class="col-md-6">
+                      <input type="text" name="yield" id="yield" class="input">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-md-4">Preparation Time</label>
+                    <div class="col-md-6">
+                      <input type="text" name="prep_time" id="prep_time" class="input">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-md-4">Cooking Time</label>
+                    <div class="col-md-6">
+                      <input type="text" name="cook_time" id="cook_time" class="input">
+                    </div>
+                  </div>
+                </div>
+                <div class="upload-photo">
+                  <h4>Upload photo</h4>
+                  <div class="form-group">
+                    <div class="typeFile">
+                      <label class="choose-file btn-border-color">Upload</label>
+                      <input type="file" name="upload_photo" id="upload_photo" class="input-file">
+                      <input type="text" class="input-file-text" placeholder="no file choosen">
+                    </div>
+                  </div>
+                </div>
+                <div class="ingredient">
+                  <h4>ingredients</h4>
+                  <div class="dynamic-fields" id="ingredientInput">
+                  <div class="form-group row" id="entry">
+                    <div class="col-9 col-sm-9">
+                      <input type="text" name="recipe_ingredient[]" class="input" placeholder="ingredients">
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <span class="btn btn-sm remove-item btn-bg-color"><i class="fas fa-minus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" id="ingredientButton" class="btn btn-sm add-item btn-border-color"><i class="fas fa-plus"></i> Add ingredient</button>
+              </div>
+              <div class="direction">
+                <h4>Steps:</h4>
+                <div class="dynamic-fields" id="directionField">
+                  <div class="form-group row" id="entry">
+                    <div class="col-9 col-sm-9">
+                      <textarea name="step[]" rows="1" class="input"></textarea>
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <span class="btn btn-sm remove-item btn-bg-color"><i class="fas fa-minus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" id="directionButton" class="btn btn-sm add-item btn-border-color"><i class="fas fa-plus"></i> Add Step</button>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-10 text-center">
+                  <button type="submit" class="btn-submit btn-bg-color">Submit</button>
+                </div>
+              </div>
+              </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- footer menu -->
+            <ul class="footer-menu">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../recipe.html">Recipe</a></li>
+              <li><a href="../../about.html">About</a></li>
+              <li><a href="../../contact.html">contact</a></li>
+            </ul> <!-- footer menu end -->
+          </div>
+          <div class="col-md-6">
+            <!-- footer social link -->
+            <ul class="footer-social-link">
+              <li><a class="twitter-icon" href=""><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a class="facebook-icon" href=""><span><i class="fab fa-facebook"></i></span></a></li>
+              <li><a class="instagram-icon" href=""><span><i class="fab fa-instagram"></i></span></a></li>
+              <li><a class="linkedin-icon" href=""><span><i class="fab fa-linkedin"></i></span></a></li>
+              <li><a class="youtube-icon" href=""><span><i class="fab fa-youtube"></i></span></a></li>
+            </ul> <!-- footer social link end -->
+          </div>
+         </div>
+        <p class="copyright">
+          &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reversed
+        </p>
+      </div>
+    </footer>
+    <!-- js -->
+    <script defer src="../../js/all.min.js"></script>
+    <script defer src="../../js/fontawesome.min.js"></script>
+    <script defer src="../../js/jquery-3.4.1.min.js"></script>
+    <script defer src="../../js/bootstrap.min.js"></script>
+    <script defer src="../../js/style.js"></script>
+  </body>
+</html>
